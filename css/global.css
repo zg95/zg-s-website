@@ -48,10 +48,6 @@ a:active, a:hover { outline: 0; }
 }
 @font-face {
     font-family: 'MyWebCFont';
-    src: url('../fonts/survival-horror.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/survival-horror.woff') format('woff'), /* Modern Browsers */
-    url('../fonts/survival-horror.ttf')  format('truetype'), /* Safari, Android, iOS */
-    url('../fonts/survival-horror.svg') format('svg'); /* Legacy iOS */
 }
 
 
@@ -90,8 +86,11 @@ a:active, a:hover { outline: 0; }
 
 }
 @media (max-width: 767px){
+    body{background-image:url("../img/1.jpg")}
     .cd-main-content .center{padding: 0px 20px;}
     .cd-main-content .center .cd-btn{padding: 7px;font-size: 20px;width: 260px;}
+    .p-canvas-webgl{display: none;}
+    
 }
 @media (max-width: 480px){
 
