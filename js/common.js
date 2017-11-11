@@ -113,15 +113,15 @@ var ConsoleSignature = function () {
     return ConsoleSignature;
 }();
 
-// var debounce = function debounce(callback, duration) {
-//     var timer;
-//     return function (event) {
-//         clearTimeout(timer);
-//         timer = setTimeout(function () {
-//             callback(event);
-//         }, duration);
-//     };
-// };
+var debounce = function debounce(callback, duration) {
+    var timer;
+    return function (event) {
+        clearTimeout(timer);
+        timer = setTimeout(function () {
+            callback(event);
+        }, duration);
+    };
+};
 
 var canvas = document.getElementById('canvas-webgl');
 var renderer = new THREE.WebGLRenderer({
