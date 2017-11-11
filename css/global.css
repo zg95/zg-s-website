@@ -16,7 +16,7 @@ a img { border: none; }
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
 
 /* global */
-body { font-family: Verdana, Helvetica, sans-serif; font-weight: normal; font-size: 100%; line-height: 1.4; color: #003772; background-color: #EEF1F8; }
+body { font-family: Verdana, Helvetica, sans-serif; font-weight: normal; font-size: 100%; line-height: 1.4; color: #003772; background-color: #000; }
 
 img { width: auto\9; height: auto; max-width: 100%; vertical-align: middle; border: 0; -ms-interpolation-mode: bicubic; }
 
