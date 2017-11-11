@@ -22,16 +22,38 @@ img { width: auto\9; height: auto; max-width: 100%; vertical-align: middle; bord
 
 a { color: #003772; background: transparent; }
 
-a:hover { color: #0076B3; text-decoration: none; }
+a:hover { color: #fff; text-decoration: none; }
 
 a:active, a:hover { outline: 0; }
-
+/*canvas */
 .p-canvas-webgl {
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
 }
+@font-face {
+    font-family: 'MyCanvasFont';
+    src: url('../fonts/survival-horror.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/survival-horror.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/survival-horror.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/survival-horror.svg') format('svg'); /* Legacy iOS */
+}
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('../fonts/icomoon.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/icomoon.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/icomoon.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/icomoon.svg') format('svg'); /* Legacy iOS */
+}
+@font-face {
+    font-family: 'MyWebCFont';
+    src: url('../fonts/survival-horror.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/survival-horror.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/survival-horror.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/survival-horror.svg') format('svg'); /* Legacy iOS */
+}
+
 
 .p-summary {
     position: absolute;
@@ -54,4 +76,23 @@ a:active, a:hover { outline: 0; }
 }
 .p-summary a {
     color: #fff;
+}
+.cd-main-content .center .cd-btn{
+    font-family:"MyCanvasFont", serif;
+}
+@media (min-width: 1200px){
+
+}
+@media (max-width: 1199px){
+
+}
+@media (max-width: 991px){
+
+}
+@media (max-width: 767px){
+    .cd-main-content .center{padding: 0px 20px;}
+    .cd-main-content .center .cd-btn{padding: 7px;font-size: 20px;width: 260px;}
+}
+@media (max-width: 480px){
+
 }
