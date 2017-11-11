@@ -78,7 +78,7 @@ a:active, a:hover { outline: 0; }
     color: #fff;
 }
 .cd-main-content .center .cd-btn{
-    font-family:"MyCanvasFont", serif;
+    font-family:"MyCanvasFont","MyWebCFont",宋体, serif;
 }
 @media (min-width: 1200px){
 
