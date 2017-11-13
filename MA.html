@@ -32,11 +32,57 @@
 <!--主页面-->
 <div class="cd-modal">
     <!-- header -->
-
-    <div class="modal-content">
-        <h1>Welcome to the ZG page</h1>
-    </div> <!-- .modal-content -->
-
+    <header class="header">
+        <div class="container">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target="#example-navbar-collapse">
+                            <span class="sr-only">切换导航</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">欢迎来到我的网页...</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">0</a></li>
+                            <li><a href="#">1</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    3 <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#">6</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">7</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">8</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">4</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="main">
+        <div class="container">
+            <div class="modal-content">
+                <h1>Welcome to the ZG page</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-3"><div>版块1</div><div>版块2</div></div>
+                <div class="col-md-6"><div>版块3</div></div>
+            </div>
+        </div>
+ <!-- .modal-content -->
+    </section>
     <a href="#0" class="modal-close">Close</a>
 </div> <!-- .cd-modal -->
 

@@ -25,13 +25,12 @@ a { color: #003772; background: transparent; }
 a:hover { color: #fff; text-decoration: none; }
 
 a:active, a:hover { outline: 0; }
+
+.header, .main, .footer { margin: 0 auto; max-width: 1440px; min-width: 320px;  }
+.cd-modal.visible .modal-content{  border: 0;  border-radius: 0;  box-shadow: initial;  }
+
 /*canvas */
-.p-canvas-webgl {
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-}
+.p-canvas-webgl { position: fixed;z-index: 1;top: 0;left: 0;}
 @font-face {
     font-family: 'MyCanvasFont';
     src: url('../fonts/survival-horror.eot'); /* IE9 Compat Modes */
@@ -46,36 +45,22 @@ a:active, a:hover { outline: 0; }
     url('../fonts/icomoon.ttf')  format('truetype'), /* Safari, Android, iOS */
     url('../fonts/icomoon.svg') format('svg'); /* Legacy iOS */
 }
-@font-face {
-    font-family: 'MyWebCFont';
-}
+@font-face { font-family: 'MyWebCFont';}
 
 
-.p-summary {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    z-index: 2;
-    color: #fff;
-    font-family: 'Homenaje', sans-serif;
-}
-.p-summary h1 {
-    margin: 0 0 0.2em;
-    font-size: 42px;
-    font-weight: 400;
-    letter-spacing: 0.05em;
-}
-.p-summary p {
-    margin: 0;
-    font-size: 1.1rem;
-    letter-spacing: 0.1em;
-}
-.p-summary a {
-    color: #fff;
-}
-.cd-main-content .center .cd-btn{
-    font-family:"MyCanvasFont","MyWebCFont",宋体, serif;
-}
+.p-summary {position: absolute; top: 20px;left: 20px;z-index: 2;color: #fff;font-family: 'Homenaje', sans-serif; }
+.p-summary h1 {margin: 0 0 0.2em;font-size: 42px;font-weight: 400;letter-spacing: 0.05em;}
+.p-summary p {margin: 0;font-size: 1.1rem; letter-spacing: 0.1em; }
+.p-summary a {color: #fff; }
+.cd-main-content .center .cd-btn{ font-family:"MyCanvasFont","MyWebCFont",宋体, serif; }
+ /*header*/
+.header .navbar-nav{ float: right; }
+.header .navbar{ border-radius: 0;margin-bottom: 0; }
+.header .container-fluid .navbar-brand { font-family:"微软雅黑","MyWebCFont",宋体, serif;}
+.header .navbar-nav>li>.dropdown-menu{ right: -17px;left: inherit;}
+.header .navbar-default .navbar-collapse { padding: 0;margin-bottom: 0; }
+.cd-modal .modal-content{padding: 20px;}
+.cd-modal h1 {text-align: center; font-size: 32px;}
 @media (min-width: 1200px){
 
 }
@@ -90,8 +75,9 @@ a:active, a:hover { outline: 0; }
     .cd-main-content .center{padding: 0px 20px;}
     .cd-main-content .center .cd-btn{padding: 7px;font-size: 20px;width: 260px;}
     .p-canvas-webgl{display: none;}
-    
-}
+    .header .navbar-nav{  float: inherit;     display: flex; margin: 0px;}
+    .header .nav>li{width: 25%;}
+    .cd-modal.visible .modal-close{ top: 13px; right: 26%; height: 25px;  width: 25px;}  }
 @media (max-width: 480px){
 
 }
